@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Modélisation</title>
+<meta charset="utf-8">
+
+</head>
+<body >
+  <div style=" background: #1c9099; padding: 80px;" >
+    <h1 style="color: white;  margin: 20px; "> Plus de 70% des accidents de la route sont causés par... </h1>
+  </div>
+<div style="width: 30%; float: right; background: #deebf7;">
+  <a href="https://zupimages.net/viewer.php?id=22/08/0xan.png"><img width="400" height="300"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/0xan.png" alt="" /></a>
+  <a href="https://zupimages.net/viewer.php?id=22/08/sym0.png"><img width="400" height="300"  style="padding: 0px 0px 20px 0px;"  src="https://zupimages.net/up/22/08/sym0.png" alt="" /></a>
+ 
+  <p style=" font-size:100%; padding: 0px 0px 0px 30px;">
+    RStudio est un environnement de développement gratuit, libre et multiplateforme pour R, un langage de programmation utilisé pour le traitement de données et l’analyse statistique. Il est disponible sous la licence libre AGPLv3, ou bien sous une licence commerciale, soumise à un abonnement annuel.
+  </p>
+  <p style=" font-size:100%; padding: 0px 0px 0px 30px;">
+    RStudio est disponible en deux versions : RStudio Desktop, pour une exécution locale du logiciel comme tout autre application, et RStudio Server qui, lancé sur un serveur Linux, permet d'accéder à RStudio par un navigateur web. Des distributions de RStudio Desktop sont disponibles pour Microsoft Windows, OS X et GNU/Linux.
+
+    RStudio a été écrit en langage C++, et son interface graphique utilise l'interface de programmation Qt.
+
+    Depuis la version 1.0 sortie en novembre 2016, RStudio intègre la possibilité d'écrire des notebooks combinant de manière interactive du code R, du texte mis en forme en markdown et des appels à du code Python ou Bash.
+  </p>
+<h1>
+  Autres solutions ......
+</h1>
+
+  <a href="https://zupimages.net/viewer.php?id=22/08/y279.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/y279.jpg" alt="" /></a>
+
+<p>
+  <em> <strong> Les carrefours giratoires permet de diminuer considérablement le taux des accidents au niveau des intersections </em> </strong>
+</p>
+<a href="https://zupimages.net/viewer.php?id=22/08/4erp.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/4erp.jpg" alt="" /></a>
+<p>
+  <em> <strong>  La signalisation horizontale et verticale permettent de faciliter la circulation routiére </em> </strong> 
+</p>
+<a href="https://zupimages.net/viewer.php?id=22/08/a8z7.png"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/a8z7.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/08/88hr.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/88hr.jpg" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/08/csy9.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/csy9.jpg" alt="" /></a>
+
+<a href="https://zupimages.net/viewer.php?id=22/08/co35.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;"src="https://zupimages.net/up/22/08/co35.jpg" alt="" /></a>
+<p>
+  <em> <strong>  Une bonne conception routiére permet de diminuer considérablement le taux d'accident </em> </strong> 
+</p>
+<a href="https://zupimages.net/viewer.php?id=22/08/3ym8.jpg"><img width="400" height="400"  style="padding: 0px 0px 20px 0px;" src="https://zupimages.net/up/22/08/3ym8.jpg" alt="" /></a>
+
+</div>
+<div style="width: 70%;">
+  
+
+
+<a href="https://zupimages.net/viewer.php?id=22/08/a5bg.png"><img width="800" height="250" title="Ecole de formation en sciences géomatiques et ingénierie topographique" style="padding: 0px 0px 0px 50px;" src="https://zupimages.net/up/22/08/a5bg.png" alt="" /></a>
+
+<h1 style="color: black;  margin: 50px; "> Modélisation du phénoméne par regression multiple </h1>
+<p style="font-size:100%; margin: 20px;">Au Maroc, les accidents de la circulation font annuellement, en moyenne, près de 3.500 décès et 10.000 blessés graves, soit une moyenne de 10 tués et 33 blessés graves par jour, Malgré les efforts consentis pour réduire le nombre des accidents de la route, le constat demeure alarmant. En septembre 2021, le Maroc a dénombré 10.028 accidents corporels de la circulation routière au niveau national, soit une hausse de +18,6% par rapport à septembre 2020, et de +13,8% par rapport à septembre 2019, selon des chiffres de l’Agence nationale de la Sécurité routière (NARSA).
+Ce qui necessite une explication et une modélisation assez poussée pour pouvoir cerner cette problématique.
+</p>
+<h1 style="color: brown;  font-size:110%; margin: 20px 0px 0px 400px;">Evolution des accidents et victimes de 2008 a 2017 </h1>
+
+<style >
+	table, th, td {
+  border: 1px solid black;
+  position: center;
+ margin: 20px 0px 0px 150px;
+}
+</style>
+<table>
+  <tr style="background: lightgreen;
+">
+    <th> </th>
+    <th>2008</th>
+    <th>2009</th>
+    <th>2010</th>
+    <th>2011</th>
+    <th>2012</th>
+    <th>2013</th>
+    <th>2014</th>
+    <th>2015</th>
+    <th>2016</th>
+    <th>2017</th>
+  </tr>
+  <tr >
+    <td>Accidents hors agglomération</td>
+    <td>18555</td>
+    <td>19048</td>
+    <td>17361</td>
+    <td>18960</td>
+    <td>18949</td>
+    <td>18341</td>
+    <td>17149</td>
+    <td>21027</td>
+    <td>21638</td>
+    <td>24069</td>
+  </tr>
+   <tr >
+    <td>Accidents en agglomération</td>
+    <td>46160</td>
+    <td>47910</td>
+    <td>48100</td>
+    <td>48122</td>
+    <td>48202</td>
+    <td>49585</td>
+    <td>51130</td>
+    <td>56976</td>
+    <td>59042</td>
+    <td>65306</td>
+  </tr>
+ <tr >
+    <td>Total accidents</td>
+    <td>64715</td>
+    <td>66958</td>
+    <td>65461</td>
+    <td>67082</td>
+    <td>67151</td>
+    <td>67926</td>
+    <td>68279</td>
+    <td>78003</td>
+    <td>80680</td>
+    <td>89375</td>
+  </tr>
+   <tr >
+    <td>Accidents mortels</td>
+    <td>3546</td>
+    <td>3489</td>
+    <td>3181</td>
+    <td>3636</td>
+    <td>3531</td>
+    <td>3265</td>
+    <td>3021</td>
+    <td>3365</td>
+    <td>3317</td>
+    <td>3274</td>
+  </tr>
+  <tr >
+    <td>TUES</td>
+    <td>4162</td>
+    <td>4042</td>
+    <td>3778</td>
+    <td>4222</td>
+    <td>4167</td>
+    <td>3832</td>
+    <td>3489</td>
+    <td>3776</td>
+    <td>3785</td>
+    <td>3726</td>
+  </tr>
+   <tr >
+    <td>BLESSES</td>
+    <td>98907</td>
+    <td>102743</td>
+    <td>98472</td>
+    <td>102011</td>
+    <td>102350</td>
+    <td>102040</td>
+    <td>101242</td>
+    <td>115042</td>
+    <td>119162</td>
+    <td>130011</td>
+  </tr>
+  
+
+</table>
+
+
+
+
+<p style="font-size:100%; margin: 20px;"> La modélisation du phénomène consiste à l’expliquer en utilisant des paramètres explicatifs notamment la vitesse, le comportement des conducteurs, la longueur de la route…, ce qui est très utile en terme de prise de décision pour l’aménagement du territoire.
+Généralement le choix du modèle se base sur le type de la variable à expliquer, si elle est quantitative nous utilisons un modèle de régression multiple par contre si c’est qualitative nous utilisons soit le modèle PROBIT ou le modèle LOGIT 
+Ainsi pour l'explication du taux d'accident le modèle adéquat est un modèle de régression multiples en utilisant les paramètres ci-dessous :
+</p>
+<p style="font-size:100%; margin:0px 0px 0px 100px; color: darkgreen;"> L : La longueur de la route
+</p>
+<p style="font-size:100%; margin: 0px 0px 0px 100px;color: darkgreen;"> T : Trafic moyen journalier
+</p>
+<p style="font-size:100%; margin: 0px 0px 0px 100px;color: darkgreen;"> C : La circulation moyenne journaliére
+</p>
+<h1 style="color: brown;  font-size:110%; margin: 20px 0px 0px 200px;">Echantillonnage aléatoire et simple </h1>
+<table  style="width:30%; margin: 20px 0px 0px 200px; ">
+  <tr style="background: yellow;">
+    <th> N </th>
+    <th>L</th>
+    <th>T</th>
+    <th>C</th>
+  </tr>
+
+  <tr >
+   <td> 37</td>
+    <td>17</td>
+    <td>62479</td>
+    <td>1062135</td>
+  </tr>
+
+    <tr >
+   <td> 24</td>
+    <td>12</td>
+    <td>58634</td>
+    <td>703613</td>
+  </tr>
+
+  <tr >
+   <td> 32</td>
+    <td>20</td>
+    <td>53986</td>
+    <td>1079722</td>
+  </tr>
+
+<tr >
+   <td> 32</td>
+    <td>10</td>
+    <td>62396</td>
+    <td>623962</td>
+  </tr> 
+
+   <tr >
+   <td> 14</td>
+    <td>12.5</td>
+    <td>28115</td>
+    <td>351438</td>
+  </tr>
+
+   <tr >
+   <td> 7</td>
+    <td>4</td>
+    <td>39390</td>
+    <td>157560</td>
+  </tr>
+
+  <tr >
+   <td> 12</td>
+    <td>5</td>
+    <td>47130</td>
+    <td>235648</td>
+  </tr>
+
+  <tr >
+   <td> 14</td>
+    <td>6.5</td>
+    <td>53556</td>
+    <td>348111</td>
+  </tr>
+
+  <tr >
+   <td> 37</td>
+    <td>17</td>
+    <td>62479</td>
+    <td>1062135</td>
+  </tr>
+
+  <tr >
+   <td> 12</td>
+    <td>16</td>
+    <td>20576</td>
+    <td>329223</td>
+  </tr>
+
+  <tr >
+   <td> 18</td>
+    <td>17</td>
+    <td>16286</td>
+    <td>276865</td>
+  </tr>
+
+  <tr >
+   <td> 19</td>
+    <td>18</td>
+    <td>14738</td>
+    <td>265293</td>
+  </tr>
+
+  <tr >
+   <td> 29</td>
+    <td>22</td>
+    <td>14121</td>
+    <td>310655</td>
+  </tr>
+
+  <tr >
+   <td> 13</td>
+    <td>8</td>
+    <td>7260</td>
+    <td>81247</td>
+  </tr>
+
+  <tr >
+   <td> 6</td>
+    <td>10</td>
+    <td>2627</td>
+    <td>26266</td>
+  </tr>
+
+  <tr >
+   <td> 6</td>
+    <td>11</td>
+    <td>2573</td>
+    <td>28299</td>
+  </tr>
+
+  <tr >
+   <td> 7</td>
+    <td>33</td>
+    <td>1600</td>
+    <td>52785</td>
+  </tr>
+
+  <tr >
+   <td> 12</td>
+    <td>44</td>
+    <td>1162</td>
+    <td>51173</td>
+  </tr>
+
+  <tr >
+   <td> 6</td>
+    <td>33</td>
+    <td>992</td>
+    <td>32724</td>
+  </tr>
+
+  <tr >
+   <td> 4</td>
+    <td>10</td>
+    <td>844</td>
+    <td>8442</td>
+  </tr>
+
+</table>
+
+
+
+<a href="https://zupimages.net/viewer.php?id=22/08/5bg8.png"><img title=" Résultat de la modélisation en utilisant le langage R, les trois paramètres utilisés permet d'expliquer 72.15% du phénomène " style="padding: 30px 0px 0px 140px;" src="https://zupimages.net/up/22/08/5bg8.png" alt="" /></a>
+
+
+
+<h1 style="color: black;  margin: 10px;">Chemin optimal</h1>
+<p style="font-size:100%;  margin: 20px;"> La route provinciale P3028 lie deux agglomérations urbaine, Extrémité de plusieurs routes provinciales et liée à la route nationale. Ainsi le taux d’accident est élevé au niveau de cette route. </p>
+
+<a href="https://zupimages.net/viewer.php?id=22/08/sbgl.png"><img  style="padding: 0px 0px 0px 150px; " src="https://zupimages.net/up/22/08/sbgl.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/08/njm5.png"><img style="padding: 40px 0px 0px 150px; " src="https://zupimages.net/up/22/08/njm5.png" alt="" /></a>
+
+
+<p style="font-size:100%;  margin: 20px;">
+On a trouvé comme résultat de la modélisation par régression que le nombre d’accident est expliqué à plus que 70 % par la longueur de la route et par le trafic moyen journalier et en particulier le nombre de kilomètre circulé, ainsi pour remédier à ce problème on peut agir sur ces paramètres.
+Parmi les solutions possibles et pour diminuer la circulation au niveau de cette route, on peut opter pour la conception d’une autre route provinciale (parallèle) vu le besoin.
+Dans ce qui suit nous allons faire une approximation de cette conception en se basant sur la distance coût.
+</p>
+
+<h1 style="color: black;  font-size:130%; margin: 10px;">Les données nécessaires pour réaliser la matrice de friction</h1>
+
+<p style="font-size:100%; margin: 20px;"> 
+Pour réaliser la carte d'occupation de sol on a utilisé dans le cadre de ce projet un image satellite de la zone obtenue à partir de Google Earth et on a procédé à une classification basée pixels en utilisant l'algorithme de maximum de vraisemblance, la carte d'occupation du sol est un élément de base pour la détermination de la matrice de friction qui réfère aux difficultés et au coût des travaux en terme de réalité terrain et occupation territoriale, également et pour optimiser la matrice de friction on peut utiliser l'information altimétrique et pour cela on a exploité un modèle numérique de terrain relatif à notre zone d'étude en effectuant une interpolation par l'inverse de distance.
+</p>
+
+<a href="https://zupimages.net/viewer.php?id=22/08/quo4.png"><img  style="padding: 0px 0px 0px 150px;  " src="https://zupimages.net/up/22/08/quo4.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/08/yecm.png"><img style="padding: 50px 0px 0px 150px; " src="https://zupimages.net/up/22/08/yecm.png" alt="" /></a>
+<a href="https://zupimages.net/viewer.php?id=22/08/mx3v.png"><img  style="padding: 30px 0px 10px 150px; " src="https://zupimages.net/up/22/08/mx3v.png" alt="" /></a>
+
+
+<p style="font-size:100%;  margin: 0px;">
+	Cette approche de chemin optimal n'est qu'une proposition sur base de la modélisation préétablie, parmi les solutions que nous pouvons également adopter pour freiner l'évolution de ce phénomène c'est l'installation des instruments de contrôle et de surveillance pour diriger la vitesse des usagers et faciliter la circulation en cas de l'embouteillage notamment les signalisations horizontales et verticales limitant la vitesse ou encore les systèmes RADAR.
+
+</p>
+<h1 style="color: black;  font-size:130%; margin: 10px;">Conclusion</h1>
+
+<p style="font-size:100%;  ">
+L'objectif de cette étude est d'expliquer le taux d'accident au Maroc pour y remédier, On constaté que 70% du phénoméne est expliqué par la vitesse et le taux de trafic journalier en d'autres termes toute intervention visant l'optimisation de ces deux paramétres pourra diminuer le taux d'accident de plus que 70% ce qui est d'extreme importance. 
+
+</p> 
+</div>
+
+</body>
+</html>
